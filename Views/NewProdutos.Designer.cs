@@ -48,7 +48,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.label9 = new System.Windows.Forms.Label();
             this.textFornecedor = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.checkBoxAltomatico = new System.Windows.Forms.CheckBox();
+            this.checkBoxManterpreco = new System.Windows.Forms.CheckBox();
             this.checkBoxManterpreçodecusto = new System.Windows.Forms.CheckBox();
             this.comboUnidadedeMedida = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -58,11 +58,11 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.labelNCM = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.buttonVoltarnewproduto = new System.Windows.Forms.Button();
             this.buttonCadastrarnewproduto = new System.Windows.Forms.Button();
             this.buttonCorrigirCadastro = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -79,7 +79,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(38, 32);
+            this.label2.Location = new System.Drawing.Point(38, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 15);
             this.label2.TabIndex = 1;
@@ -87,7 +87,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // textCodigoproduto
             // 
-            this.textCodigoproduto.Location = new System.Drawing.Point(132, 29);
+            this.textCodigoproduto.Location = new System.Drawing.Point(132, 41);
             this.textCodigoproduto.Name = "textCodigoproduto";
             this.textCodigoproduto.Size = new System.Drawing.Size(100, 23);
             this.textCodigoproduto.TabIndex = 2;
@@ -163,7 +163,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // textPrecodeCusto
             // 
-            this.textPrecodeCusto.Location = new System.Drawing.Point(132, 187);
+            this.textPrecodeCusto.Location = new System.Drawing.Point(132, 175);
             this.textPrecodeCusto.Name = "textPrecodeCusto";
             this.textPrecodeCusto.Size = new System.Drawing.Size(100, 23);
             this.textPrecodeCusto.TabIndex = 19;
@@ -172,7 +172,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(38, 195);
+            this.label7.Location = new System.Drawing.Point(38, 183);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 15);
             this.label7.TabIndex = 18;
@@ -180,7 +180,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // textPrecoR
             // 
-            this.textPrecoR.Location = new System.Drawing.Point(132, 142);
+            this.textPrecoR.Location = new System.Drawing.Point(132, 136);
             this.textPrecoR.Name = "textPrecoR";
             this.textPrecoR.Size = new System.Drawing.Size(100, 23);
             this.textPrecoR.TabIndex = 17;
@@ -189,7 +189,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(38, 150);
+            this.label8.Location = new System.Drawing.Point(38, 144);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 15);
             this.label8.TabIndex = 16;
@@ -197,7 +197,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // textCodFornc
             // 
-            this.textCodFornc.Location = new System.Drawing.Point(589, 174);
+            this.textCodFornc.Location = new System.Drawing.Point(589, 175);
             this.textCodFornc.Name = "textCodFornc";
             this.textCodFornc.Size = new System.Drawing.Size(100, 23);
             this.textCodFornc.TabIndex = 23;
@@ -206,7 +206,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(471, 177);
+            this.label9.Location = new System.Drawing.Point(471, 178);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 15);
             this.label9.TabIndex = 22;
@@ -214,8 +214,9 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // textFornecedor
             // 
-            this.textFornecedor.Location = new System.Drawing.Point(589, 135);
+            this.textFornecedor.Location = new System.Drawing.Point(589, 136);
             this.textFornecedor.Name = "textFornecedor";
+            this.textFornecedor.ReadOnly = true;
             this.textFornecedor.Size = new System.Drawing.Size(100, 23);
             this.textFornecedor.TabIndex = 21;
             // 
@@ -223,32 +224,32 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label10.Location = new System.Drawing.Point(471, 138);
+            this.label10.Location = new System.Drawing.Point(471, 139);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 15);
             this.label10.TabIndex = 20;
             this.label10.Text = "Fornecedor";
             // 
-            // checkBoxAltomatico
+            // checkBoxManterpreco
             // 
-            this.checkBoxAltomatico.AutoSize = true;
-            this.checkBoxAltomatico.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.checkBoxAltomatico.Location = new System.Drawing.Point(263, 142);
-            this.checkBoxAltomatico.Name = "checkBoxAltomatico";
-            this.checkBoxAltomatico.Size = new System.Drawing.Size(85, 19);
-            this.checkBoxAltomatico.TabIndex = 24;
-            this.checkBoxAltomatico.Text = "Altomatico";
-            this.checkBoxAltomatico.UseVisualStyleBackColor = true;
+            this.checkBoxManterpreco.AutoSize = true;
+            this.checkBoxManterpreco.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.checkBoxManterpreco.Location = new System.Drawing.Point(255, 142);
+            this.checkBoxManterpreco.Name = "checkBoxManterpreco";
+            this.checkBoxManterpreco.Size = new System.Drawing.Size(97, 19);
+            this.checkBoxManterpreco.TabIndex = 24;
+            this.checkBoxManterpreco.Text = "Manter Preço";
+            this.checkBoxManterpreco.UseVisualStyleBackColor = true;
             // 
             // checkBoxManterpreçodecusto
             // 
             this.checkBoxManterpreçodecusto.AutoSize = true;
             this.checkBoxManterpreçodecusto.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.checkBoxManterpreçodecusto.Location = new System.Drawing.Point(263, 188);
+            this.checkBoxManterpreçodecusto.Location = new System.Drawing.Point(255, 179);
             this.checkBoxManterpreçodecusto.Name = "checkBoxManterpreçodecusto";
-            this.checkBoxManterpreçodecusto.Size = new System.Drawing.Size(147, 19);
+            this.checkBoxManterpreçodecusto.Size = new System.Drawing.Size(100, 19);
             this.checkBoxManterpreçodecusto.TabIndex = 25;
-            this.checkBoxManterpreçodecusto.Text = "Manter Preço de Custo";
+            this.checkBoxManterpreçodecusto.Text = "Manter Preço ";
             this.checkBoxManterpreçodecusto.UseVisualStyleBackColor = true;
             // 
             // comboUnidadedeMedida
@@ -284,7 +285,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.linkCadastrodeFornecedor.AutoSize = true;
             this.linkCadastrodeFornecedor.LinkColor = System.Drawing.Color.DarkSlateGray;
-            this.linkCadastrodeFornecedor.Location = new System.Drawing.Point(589, 210);
+            this.linkCadastrodeFornecedor.Location = new System.Drawing.Point(579, 201);
             this.linkCadastrodeFornecedor.Name = "linkCadastrodeFornecedor";
             this.linkCadastrodeFornecedor.Size = new System.Drawing.Size(120, 15);
             this.linkCadastrodeFornecedor.TabIndex = 28;
@@ -339,7 +340,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             "FARDO",
             "DUZIA",
             "PEÇA"});
-            this.comboBox2.Location = new System.Drawing.Point(132, 286);
+            this.comboBox2.Location = new System.Drawing.Point(132, 295);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(100, 23);
             this.comboBox2.TabIndex = 32;
@@ -348,7 +349,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.labelNCM.AutoSize = true;
             this.labelNCM.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelNCM.Location = new System.Drawing.Point(38, 286);
+            this.labelNCM.Location = new System.Drawing.Point(38, 295);
             this.labelNCM.Name = "labelNCM";
             this.labelNCM.Size = new System.Drawing.Size(35, 15);
             this.labelNCM.TabIndex = 31;
@@ -362,18 +363,9 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.panel3.Size = new System.Drawing.Size(751, 10);
             this.panel3.TabIndex = 33;
             // 
-            // buttonVoltarnewproduto
-            // 
-            this.buttonVoltarnewproduto.Location = new System.Drawing.Point(66, 372);
-            this.buttonVoltarnewproduto.Name = "buttonVoltarnewproduto";
-            this.buttonVoltarnewproduto.Size = new System.Drawing.Size(75, 23);
-            this.buttonVoltarnewproduto.TabIndex = 34;
-            this.buttonVoltarnewproduto.Text = "Voltar";
-            this.buttonVoltarnewproduto.UseVisualStyleBackColor = true;
-            // 
             // buttonCadastrarnewproduto
             // 
-            this.buttonCadastrarnewproduto.Location = new System.Drawing.Point(168, 372);
+            this.buttonCadastrarnewproduto.Location = new System.Drawing.Point(38, 372);
             this.buttonCadastrarnewproduto.Name = "buttonCadastrarnewproduto";
             this.buttonCadastrarnewproduto.Size = new System.Drawing.Size(75, 23);
             this.buttonCadastrarnewproduto.TabIndex = 35;
@@ -382,7 +374,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             // buttonCorrigirCadastro
             // 
-            this.buttonCorrigirCadastro.Location = new System.Drawing.Point(273, 372);
+            this.buttonCorrigirCadastro.Location = new System.Drawing.Point(634, 372);
             this.buttonCorrigirCadastro.Name = "buttonCorrigirCadastro";
             this.buttonCorrigirCadastro.Size = new System.Drawing.Size(75, 23);
             this.buttonCorrigirCadastro.TabIndex = 36;
@@ -401,11 +393,20 @@ namespace Projeto_Integrador_Construção_do_Sistema
             // 
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label12.Location = new System.Drawing.Point(341, 257);
+            this.label12.Location = new System.Drawing.Point(356, 247);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(69, 15);
             this.label12.TabIndex = 37;
             this.label12.Text = "Observação";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(317, 366);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 35);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "Emitir Relatório";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // NewProdutos
             // 
@@ -413,11 +414,11 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(750, 407);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.buttonCorrigirCadastro);
             this.Controls.Add(this.buttonCadastrarnewproduto);
-            this.Controls.Add(this.buttonVoltarnewproduto);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.labelNCM);
@@ -427,7 +428,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.comboUnidadedeMedida);
             this.Controls.Add(this.checkBoxManterpreçodecusto);
-            this.Controls.Add(this.checkBoxAltomatico);
+            this.Controls.Add(this.checkBoxManterpreco);
             this.Controls.Add(this.textCodFornc);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textFornecedor);
@@ -475,7 +476,7 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textFornecedor;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.CheckBox checkBoxAltomatico;
+        private System.Windows.Forms.CheckBox checkBoxManterpreco;
         private System.Windows.Forms.CheckBox checkBoxManterpreçodecusto;
         private System.Windows.Forms.ComboBox comboUnidadedeMedida;
         private System.Windows.Forms.Panel panel2;
@@ -485,10 +486,10 @@ namespace Projeto_Integrador_Construção_do_Sistema
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label labelNCM;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button buttonVoltarnewproduto;
         private System.Windows.Forms.Button buttonCadastrarnewproduto;
         private System.Windows.Forms.Button buttonCorrigirCadastro;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button1;
     }
 }
